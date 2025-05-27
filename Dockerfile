@@ -20,4 +20,4 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Use gunicorn as the production server
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
